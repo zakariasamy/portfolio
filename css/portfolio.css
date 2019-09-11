@@ -1,0 +1,422 @@
+/* THe first part after Nav and before معلومات الجهاز
+*/
+
+mob-head {
+    display: block;
+    background-color: #57C959;
+    padding :60px 0;
+}
+
+mob-head .container{
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+mob-head h2{
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 45px;
+}
+
+mob-head .price {
+    margin-top: 20px;
+    font-size: 38px;
+    float: right;
+    margin-right: -12px;
+}
+
+.after-stars{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.pub-part{
+    background-color: #fff;
+}
+
+stars{
+    
+}
+stars span{
+    color:transparent;
+}
+
+stars .far{
+    color:#ffdb98;
+}
+
+  .star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+stars .checked{color: #FFC825;}
+
+.white {
+    background: white;
+    width: 94%;
+    height: 329px;
+    border-radius: 33px;
+    position: relative;
+    margin: auto;
+}
+
+.white-mob{
+    position: absolute;
+    top: 31px;
+    left: 50%;
+    height: 269px;
+    overflow: hidden;
+}
+
+.gray{
+    position: absolute;
+    width: 307px;
+    height: 340px;
+    top: -38px;
+    background: #f4f4f4;
+    border-radius: 15px;
+}
+
+.white-mob img{
+    width: 230px;
+}
+
+
+
+/* right part after nav*/
+.pub-part{
+    border-radius: 27px;
+    padding: 3px 0 9px 0;
+    height: 106px;
+}
+.pub-part p{
+    font-size: 18px;
+}
+
+pub-info{
+    display: block;
+    margin-top: 15px;
+}
+
+pub-info .part{
+    padding: 3px;
+    padding: 3px;
+    text-align: center;
+}
+.pub-part .part-img{
+
+    
+}
+
+.part span{
+    width: 100%;
+    display: block;
+    line-height: 15px;
+}
+
+.part-img img{
+    width: 71px;
+    height: 62px;
+}
+
+
+/* mob info معلومات الجهاز */
+
+.control-half-color{
+    position: absolute;
+    background: #f0f1f5;
+    top: 0;
+    height: 50%;
+    left: 0;
+    width: 100%;
+}
+
+mob-info{
+    display: block;
+    background: #fff;
+    direction: rtl;
+    text-align: right;
+    position: relative;
+}
+
+mob-info .container{
+    position: sticky;
+}
+
+mob-info .container h3{
+    font-size: 27px;
+    color: #3e453f;;
+    padding: 20px 0;
+    display: inline-block;
+    font-family: 'Tajawal', sans-serif;
+    letter-spacing: -2px;
+}
+
+mob-info h3:not(.first){
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+mob-info p{
+    font-size: 18px;
+}
+mob-info .container h3 i{
+    color: #acacac;
+    font-size: 21px;
+    margin-left: 8px;
+}
+
+mob-info .info-right .icon::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-weight: 900;
+    padding-left: 3px;
+    color: #57C959;
+    font-size: 11px;
+    position: absolute;
+    right: 0;
+    line-height: 69px;
+    z-index: 1;
+}
+
+mob-info .info-right ul > li:hover .text{
+    visibility: visible;
+}
+
+mob-info .info-right ul > li:hover .icon::before{
+    font-size: 13px;
+}
+
+mob-info .info-right .text{
+    visibility: hidden;
+    position: absolute;
+    border: 3px solid #57c959;
+    border-radius: 19px;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+    height: 63px;
+    background: #fff;
+    left: 80px;
+    top: -27px;
+    font-family: 'Tajawal', sans-serif;
+    width: 280px;
+    padding: 3px 0;
+    padding-right: 9px;
+    text-indent: 0;
+}
+mob-info .info-right ul > li{
+    display: block;
+    background: #fff;
+    margin-bottom: 7px;
+    border-radius: 15px;
+    height: 62px;
+    line-height: 62px;
+    text-indent: 13px;
+    position: relative;
+    box-shadow: 1px 1px 20px #c3b8b8;
+    box-shadow: -1px -1px 20px #c3b8b8;
+}
+
+mob-info ul > li span.content{
+    font-family: 'Markazi Text', serif !important;
+    background: #fff;
+    border-radius: 15px;
+    height: 62px;
+    line-height: 62px;
+    position: absolute;
+    left:0;
+    width: 55%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: 1px 1px 20px #ddd;
+    box-shadow: -1px -1px 20px #ddd;
+}
+
+
+mob-info ul > li span span{
+    color:#57C959;
+}
+
+mob-info ul li img{
+    width: 31px;
+    height: 28px;
+}
+
+mob-info button.first{
+    float: left;
+    margin: 17px 0px 0px;
+    border-radius: 0 10px 10px 29px;
+    display: block;
+    width: 137px;
+    height: 63px;
+}
+
+mob-info button.first i {
+    float: right;
+    line-height: 54px;
+    font-size: 27px;
+}
+
+
+
+mob-info button{
+    background: #57c959;
+    color: #fff;
+    font-size: 22px !important;
+}
+
+mob-info .more-photos .photos img{
+    max-width: 49%;
+}
+
+mob-info .info-left ul{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+mob-info .info-left ul li{
+    padding-bottom: 11px;
+    color:#000;
+    font-size: 18px;
+}
+
+mob-info .info-left .cons ul li:before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d9";
+    font-weight: 900;
+    font-size: 29px;
+    padding-left: 3px;
+    position: relative;
+    top: 6px;
+    color: #a70213;
+}
+
+mob-info .info-left .pros ul li:before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d9";
+    font-weight: 900;
+    font-size: 29px;
+    padding-left: 3px;
+    position: relative;
+    top: 6px;
+    color: #57c959;
+}
+
+mob-info .mob-box{
+    border: 3px solid #57C959;
+    border-radius: 18px;
+    position: relative;
+    margin-top: 40px;
+}
+
+mob-info .mob-box h3{
+    background: #fff;
+    position: absolute;
+    top: -38px;
+    right: -9px;
+    text-indent: 4px;
+    height: 47px;
+}
+
+mob-info .mob-box ul li{
+    padding-bottom: 5px;
+    font-size: 19px;
+    text-indent: 9px;
+}
+
+mob-info .evaluate{
+    text-align: center;
+    direction: ltr;
+}
+
+mob-info .evaluate h4{
+    background: #57c959;
+    margin: 49px 0 0;
+    height: auto;
+    padding: 9px 0;
+    color: #ffffff;
+    font-size: 31px;
+    font-weight: 400;
+}
+
+mob-info .evaluate div{
+    background: #261f1f;
+    padding: 13px 0;
+    border-radius: 0px 0px 35px 35px;
+    box-shadow: 1px 1px 20px #ddd;
+    box-shadow: 0px 2px 20px #a16969;
+}
+
+
+mob-info .evaluate stars{
+
+}
+
+mob-info .evaluate stars i{
+font-size: 40px;
+}
+
+
+
+.latest-mobs .white-latest{
+    background: white;
+    position: relative;
+    margin: auto;
+    box-shadow: 1px 1px 20px #c3b8b8;
+    box-shadow: -1px -1px 20px #c3b8b8;
+    border-radius: 31px;
+    width: 100%;
+    min-height: 193px;
+    text-align: center;
+}
+.latest-mobs .img{
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    height: 128px;
+}
+
+.latest-mobs .under-img{
+    padding-top: 130px;
+}
+
+.latest-mobs .gray-latest{
+    position: absolute;
+    width: 100px;
+    height: 143px;
+    top: -14px;
+    background: #f4f4f4;
+    border-radius: 15px;
+}
+
+
+.latest-mobs .part{
+    padding-right: 0;
+    direction: ltr;
+}
+
+.latest-mobs h4{
+    margin-bottom: 1px;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+.latest-mobs stars{
+    letter-spacing: -2px;
+    font-size: 14px;
+}
+
+.latest-mobs .after-stars{
+    color:#3e453f;
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 0;
+
+}
