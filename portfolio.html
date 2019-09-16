@@ -23,7 +23,8 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-md-7">
+                <!--  Nav الجزء الأيسر من الصفحة بعد -->
+                <div class="col-md-7 main-part">
                     <h2>Apple iPhone XR</h2>
                     <stars>
                         <i class="fas fa-star checked" data-value="0"></i>
@@ -35,8 +36,8 @@
 
                     <span class="after-stars">3 (2500)</span>
                     <pub-info>
-                        <div class="row">
-                            <div class="col-md part">
+                        <div class="row firstDiv">
+                            <div class="col col-md part">
                                 <div class="pub-part">
                                     <div class="part-img">
                                 <img src="icons/06.png">
@@ -44,7 +45,7 @@
                                 <p>5.5</p>
                                 </div>
                             </div>
-                            <div class="col-md part">
+                            <div class="col col-md part">
                                 <div class="pub-part">
                                     <div class="part-img">
                                         <img src="icons/07.png">
@@ -52,7 +53,7 @@
                                     <p>48MB</p>
                                 </div>
                             </div>
-                            <div class="col-md part">
+                            <div class="col col-md part">
                                 <div class="pub-part">
                                     <div class="part-img">
                                         <img src="icons/08.png">
@@ -60,7 +61,7 @@
                                     <p><span>Snapdragon</span> 420</p>
                                 </div>
                             </div>
-                            <div class="col-md part">
+                            <div class="col col-md part">
                                 <div class="pub-part">
                                     <div class="part-img">
                                         <img src="icons/09.png">
@@ -68,7 +69,7 @@
                                     <p>6G</p>
                                 </div>
                             </div>
-                            <div class="col-md part">
+                            <div class="col col-md part">
                                 <div class="pub-part">
                                     <div class="part-img">
                                         <img src="icons/10.png">
@@ -81,6 +82,7 @@
                         <p class="price">16.139 EGP</p>
                     </pub-info>
                 </div>
+                <!--  Nav الجزء الأيمن من الصفحة بعد -->
                 <div class="col-md-5 part-white">
                     <div class="white"></div>
                     <div class="gray"></div>
@@ -92,6 +94,7 @@
         </div>
       </mob-head>
 
+      <!-- Nav بداية تاني جزء في الصفحة بعد -->
       <mob-info>
 
                 <div class="control-half-color"></div>
@@ -109,8 +112,10 @@
                 font-size: 20px;">قارن مع<br> جهاز اخر</span>
             
             </button>
+
             <div class="row">
-                <div class="info-right col-md-7">
+                <!--الجزء الأيمن الخاص بمعلومات الجهاز الإجمالية-->
+                <div class="info-right col-lg-7">
                     <ul class="list-unstyled p-0">
                         <li>
                             <img src="icons/06.png">
@@ -127,7 +132,7 @@
                         <li>
                             <img src="icons/07.png">
                             <span>الأمامية</span>
-                            <span class="content">16MB</span>
+                            <span class="content"> 13 ميجا بكسل، بفتحة عدسه f/2.2 ، ضبط تلقائي للصورة، فلاش ثنائي LED و dual tone</span>
                         </li>
                         <li>
                             <img src="icons/08.png">
@@ -137,7 +142,7 @@
                         <li>
                             <img src="icons/09.png">
                             <span>الرام</span>
-                            <span class="content">6GB</span>
+                            <span class="content">8GB</span>
                         </li>
                         <li>
                             <img src="icons/10.png">
@@ -177,7 +182,7 @@
                         <li>
                             <img src="icons/07.png">
                             <span>مادة الصنع</span>
-                            <span class="content">الضهر من الزجاج والحواف من البلاستيك</span>
+                            <span class="content">الضهر من الزجاج والحواف من البلاستيك12354</span>
                         </li>
                         <li>
                             <img src="icons/08.png">
@@ -198,7 +203,7 @@
              </ul>
              <button class="btn btn-block more" data-value="0">معلومات أقل</button>
 
-             <div class="latest-mobs">
+             <div class="latest-mobs d-none d-lg-block">
                  <h3 style="margin-bottom: 18px;margin-top: 19px;"><i class="fas fa-circle"></i>أحدث الهواتف من Apple</h3>
                  <div class="row">
                     <div class="col-md part">
@@ -271,7 +276,11 @@
                  
              </div>
                 </div>
-                <div class="info-left col-md-5">
+                <!-- الجزء الأيسر الخاص بالمعلومات التفصيلية للجهاز-->
+                <div class="info-left col-lg-5">
+                    <div class="row">
+                        <!--أول جزء أيسر بعنوان المزيد من الصور-->
+                        <div class="col-md-6 col-lg-12">
                     <div class="more-photos">
                         <h3><i class="fas fa-circle"></i> المزيد من الصور</h3>
                         <div class="photos">
@@ -279,6 +288,9 @@
                             <img src="photos/iphone-xr-red-select-201809.png" class="img-fluid rounded">
                         </div>
                     </div>
+                        </div>
+                        <div class="col-md-6 col-lg-12">
+                    <!--تاني جزء أيسر بعنوان مراجعة سريعة-->
                     <div class="fast-revision">
                         <h3><i class="fas fa-circle"></i>مراجعة سريعة</h3>
                         <p>بدأت شركة Samsung في إصدار تحديث جديد
@@ -289,7 +301,11 @@
                                 حاليًا متاح في ألمانيا.
                                 </p>
                     </div>
-
+                        </div>
+                    </div>
+                    <!-- عيوب الجهاز ومميزاته ، لاحظ انها تظهر كعمودين في الشاشات التابلت-->
+                    <div class="row">
+                        <div class="col-md-6 col-lg-12">
                     <div class="cons">
                         <h3 style="color: #a70213"><i style="color: #a70213" class="fas fa-circle"></i>عيوب الجهاز</h3>
                             <ul class="list-unstyled">
@@ -301,7 +317,8 @@
                             </ul>
                             
                     </div>
-                    
+                        </div>
+                        <div class="col-md-6 col-lg-12">
                     <div class="pros">
                         <h3 style="color: #57C959"><i style="color: #57C959" class="fas fa-circle"></i> مميزات الجهاز</h3>
                         <ul class="list-unstyled">
@@ -315,7 +332,13 @@
                         </ul>
 
                     </div>
+                        </div>
+                    </div>
 
+                    <!-- محتويات العلبة -->
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-12">
                     <div class="mob-box">
                         <h3><i class="fas fa-circle"></i>محتويات علبة الجهاز &nbsp;</h3>
                         <br>
@@ -330,6 +353,8 @@
                         </ul>
                                 
                     </div>
+                        </div>
+                        <div class="col-md-6 col-lg-12">
                     <div class="evaluate">
                         <h4 class="h3 text-center">قيم الجهاز</h4>
                         <div>
@@ -344,8 +369,87 @@
 
                          </div>
                     </div>
+                        </div>
+                        </div>
                 </div>
             </div>
+
+                            <!--الثالث موبايلات المتجاورة ، لاحظ انها تختلفي في الشاشات الكبيرة بسبب ظهورها في مكان اخر
+                            وتظهر فقط في الشاشات الأصغر-->
+                           <!-- latest mob on tablet screen and min-->
+                           <div class="latest-mobs d-md-block d-lg-none java">
+                                <h3 style="margin-bottom: 18px;margin-top: 19px;"><i class="fas fa-circle"></i>أحدث الهواتف من Apple</h3>
+                                <div class="row">
+                                   <div class="col-md part">
+                                       <div class="latest-part">
+                                           <div class="white-latest">
+                                           <div class="gray-latest"></div>
+                                           <div class="img">
+                                               <img src="photos/hero-shield-iPhoneXS.png" width="79px">
+                                           </div>
+                                           <div class="under-img">
+                                           <h4>Apple iphone x</h4>
+                                           <stars>
+                                                   <i class="fas fa-star checked" data-value="0"></i>
+                                                   <i class="fas fa-star checked" data-value="0"></i>
+                                                   <i class="fas fa-star checked" data-value="0"></i>
+                                                   <i class="far fa-star" data-value="0"></i>
+                                                   <i class="far fa-star" data-value="0"></i>
+                                                   </stars>
+                                                   <span class="after-stars">3 (2500)</span>
+                                           </div>
+                                       </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-md part">
+                                       <div class="latest-part">
+                                           <div class="white-latest">
+                                           <div class="gray-latest"></div>
+                                           <div class="img">
+                                               <img src="photos/hero-shield-iPhoneXS.png" width="79px">
+                                           </div>
+                                           <div class="under-img">
+                                           <h4>Apple iphone x</h4>
+                                           <stars>
+                                                   <i class="fas fa-star checked" data-value="0"></i>
+                                                   <i class="fas fa-star checked" data-value="0"></i>
+                                                   <i class="fas fa-star checked" data-value="0"></i>
+                                                   <i class="far fa-star" data-value="0"></i>
+                                                   <i class="far fa-star" data-value="0"></i>
+                                                   </stars>
+                                                   <span class="after-stars">3 (2500)</span>
+                                           </div>
+                                       </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-md part">
+                                       <div class="latest-part">
+                                           <div class="white-latest">
+                                           <div class="gray-latest"></div>
+                                           <div class="img">
+                                               <img src="photos/hero-shield-iPhoneXS.png" width="79px">
+                                           </div>
+                                           <div class="under-img">
+                                           <h4>Apple iphone x</h4>
+                                           <stars>
+                                                   <i class="fas fa-star checked" data-value="0"></i>
+                                                   <i class="fas fa-star checked" data-value="0"></i>
+                                                   <i class="fas fa-star checked" data-value="0"></i>
+                                                   <i class="far fa-star" data-value="0"></i>
+                                                   <i class="far fa-star" data-value="0"></i>
+                                                   </stars>
+                                                   <span class="after-stars">3 (2500)</span>
+                                           </div>
+                                       </div>
+                                       </div>
+                                   </div>
+                
+               
+               
+                                </div>
+                                
+                            </div>
+                               </div>
         </div>
     </mob-info>
 

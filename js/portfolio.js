@@ -1,15 +1,16 @@
 /*global $, window, console*/ 
 
 
-
-
 $(function () {
 
 
     "use strict";
     //mob-head stars 
 
+    
+    // Stars :
 
+    // stars : part1 > حعل الداتا فاليو واحد عند الضغط علي نجمة معينة واضائة النجمة المضغوط عليها وجميع ماقبلها
     $("stars .fa-star").click(function(){
         if($(this).hasClass('checked')){
             $(this).nextAll().attr("class","far fa-star");
@@ -23,13 +24,12 @@ $(function () {
             $(this).attr("data-value","1").siblings().attr("data-value","0");
         }
     });
-
+    // Stars : part2 > اضاءة النجوم عند مرور الماوس
 
     $("stars .fa-star").hover(function () {
             $(this).nextAll().attr("class","far fa-star");
             $(this).attr("class","fas fa-star checked");
-            $(this).prevAll().attr("class","fas fa-star checked");
-            Delay(2000);
+            $(this).prevAll().attr("class","fas fa-star checked").delay(2000);
 
         }, function (){
             if($(this).attr("data-value") == 1){
@@ -48,12 +48,20 @@ $(function () {
 
             
         });
-        
-        $(".white-mob").css("left",(($(".part-white").width())-($(".white-mob img").width()))/2 + 12);
-        $(".gray").css("left",(($(".part-white").width())-($(".gray").width()))/2 + 12);
 
-        $(".latest-mobs .img").css("left",(($(".white-latest").width())-($(".latest-mobs img").width()))/2);
-        $(".gray-latest").css("left",(($(".white-latest").width())-($(".gray-latest").width()))/2);
+        // Nav توسيط صورة الموبايل الموجود بعد 
+        
+        $(".white-mob").css("left",(($(".part-white").innerWidth())-($(".white-mob img").width()))/2);
+        $(".gray").css("left",(($(".part-white").innerWidth())-($(".gray").width()))/2);
+
+               // توسيط صورة الموبايلات الموجود في قسم أحدث الهواتف أيمن الصفحة
+            $(".latest-mobs .img").css("left",(($(".white-latest").width())-($(".latest-mobs img").width()))/2);
+            $(".gray-latest").css("left",(($(".white-latest").width())-($(".gray-latest").width()))/2);
+               // توسيط صورة الموبايلات الموجود في قسم أحدث الهواتف الذي يظهر في الموبايل والتابلات
+            $(".java .img").css("left",(($(".java .white-latest").width())-($(".java img").width()))/2);
+            $(".java .gray-latest").css("left",(($(".java .white-latest").width())-($(".java .gray-latest").width()))/2);
+
+
 
 
         // make The button "معلومات أكثر" Clickable
@@ -79,18 +87,22 @@ $(function () {
 
     });
 
+        // Increasing the highet automatically in case of insreasing the text in mobile info which is in the right part
+   $("mob-info ul > li span.content").each(function () {
+    $(this).animate({
+    },10,function(){
+        if($(this).height() != '62'){
+            $(this).css("line-height","31px");
+        }
+    });
+    $(this).animate({
+    },10,function(){
+            $(this).parent().height($(this).height());
+    });
 
-        // centering the element in mob-info if The characters is more than 26 Character
-        $("mob-info ul > li span.content").each(function () {
-                if($(this).text().length > 26){
-                $(this).css({"lineHeight":"31px","paddingTop":"2px"});
-                delay(500);
-                $('mob-info ul > li span.content').eq(15).css({"lineHeight":"62px","paddingTop":"0px"});
+    });
 
-                }
-            });
-
-
+            
         });
                 
 
