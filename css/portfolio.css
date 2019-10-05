@@ -50,6 +50,16 @@ mob-head h2{
     margin-top: 45px;
 }
 
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    mob-head h2 {
+        font-size: 40px;
+    }
+    .pub-part p {
+        font-size: 17px !important;
+    }
+ }
+
 mob-head .price {
     margin-top: 20px;
     font-size: 38px;
@@ -282,9 +292,8 @@ mob-info .container h3 i{
     margin-left: 8px;
 }
 
-mob-info .info-right .icon::before{
-    font-family: "Font Awesome 5 Free";
-    content: "\f111";
+
+.info-right ul li .content i{
     font-weight: 900;
     padding-left: 3px;
     color: #57C959;
@@ -293,14 +302,7 @@ mob-info .info-right .icon::before{
     right: 0;
     line-height: 69px;
     z-index: 1;
-}
-
-mob-info .info-right ul > li:hover .text{
-    visibility: visible;
-}
-
-mob-info .info-right ul > li:hover .icon::before{
-    font-size: 13px;
+    top: 0;
 }
 
 mob-info .info-right .text{
@@ -388,12 +390,42 @@ mob-info ul > li span.content{
     box-shadow: -1px -1px 20px #ddd;
 }
 
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    mob-info ul > li span.content{
+        font-size: 22px;
+    }
+
+    .fast-revision p{
+        font-size: 17px !important;
+    }
+
+ }
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    mob-info h3{
+        font-size: 24px !important;
+    }
+    mob-info .info-left ul li {
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+    mob-info .evaluate .fa-star:before {
+        font-size: 27px !important;
+    }
+    mob-info .evaluate h4{
+        font-size: 28px !important;
+    }
+ }
+
 /* Small devices (landscape phones, 576px and up) and min */
 @media (max-width: 767.98px) { 
     mob-info ul > li span.content{
         font-size: 21px;
     }
 }
+
 
 
 mob-info ul > li span span{
@@ -529,11 +561,6 @@ mob-info .evaluate div{
     box-shadow: 0px 2px 20px #a16969;
 }
 
-
-mob-info .evaluate stars{
-
-}
-
 mob-info .evaluate stars i{
 font-size: 40px;
 }
@@ -621,10 +648,6 @@ font-size: 40px;
 
 /* edits for specified width of different screens */
 @media (min-width: 768px) and (max-width: 880.98px){
-
-    .ziko{
-
-    }
 
     .main-part{
         flex: 0 0 100%;

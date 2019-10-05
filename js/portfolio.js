@@ -10,7 +10,7 @@ $(function () {
     
     // Stars :
 
-    // stars : part1 > حعل الداتا فاليو واحد عند الضغط علي نجمة معينة واضائة النجمة المضغوط عليها وجميع ماقبلها
+    // stars : part1 > assign data-value to 1 during clicking on specified star & fullfill the previous stars
     $("stars .fa-star").click(function(){
         if($(this).hasClass('checked')){
             $(this).nextAll().attr("class","far fa-star");
@@ -24,7 +24,7 @@ $(function () {
             $(this).attr("data-value","1").siblings().attr("data-value","0");
         }
     });
-    // Stars : part2 > اضاءة النجوم عند مرور الماوس
+        // Stars : lighting stars during hover
 
     $("stars .fa-star").hover(function () {
             $(this).nextAll().attr("class","far fa-star");
@@ -49,15 +49,31 @@ $(function () {
             
         });
 
-        // Nav توسيط صورة الموبايل الموجود بعد 
-        
+        // centering the mobile photo which exists after nav
+        $(window).resize(function () { 
+        $(".white-mob").css("left",(($(".part-white").innerWidth())-($(".white-mob img").width()))/2);
+        $(".gray").css("left",(($(".part-white").innerWidth())-($(".gray").width()))/2);
+        });
+
         $(".white-mob").css("left",(($(".part-white").innerWidth())-($(".white-mob img").width()))/2);
         $(".gray").css("left",(($(".part-white").innerWidth())-($(".gray").width()))/2);
 
-               // توسيط صورة الموبايلات الموجود في قسم أحدث الهواتف أيمن الصفحة
+               // centering the mobile photo which exists in latest mobiles section
+
+               $(window).resize(function () {  
             $(".latest-mobs .img").css("left",(($(".white-latest").width())-($(".latest-mobs img").width()))/2);
             $(".gray-latest").css("left",(($(".white-latest").width())-($(".gray-latest").width()))/2);
-               // توسيط صورة الموبايلات الموجود في قسم أحدث الهواتف الذي يظهر في الموبايل والتابلات
+               });
+
+
+            $(".latest-mobs .img").css("left",(($(".white-latest").width())-($(".latest-mobs img").width()))/2);
+            $(".gray-latest").css("left",(($(".white-latest").width())-($(".gray-latest").width()))/2);
+
+               // centering the mobile photo which exists in latest mobiles section which appears on tablet
+               $(window).resize(function () { 
+                $(".java .img").css("left",(($(".java .white-latest").width())-($(".java img").width()))/2);
+                $(".java .gray-latest").css("left",(($(".java .white-latest").width())-($(".java .gray-latest").width()))/2);  
+               });
             $(".java .img").css("left",(($(".java .white-latest").width())-($(".java img").width()))/2);
             $(".java .gray-latest").css("left",(($(".java .white-latest").width())-($(".java .gray-latest").width()))/2);
 
@@ -102,6 +118,16 @@ $(function () {
 
     });
 
+    // show text during hover on the green point in mob-info & increaseing font-size of the green
+    $("mob-info .info-right .content i").hover(function () {
+        $(this).parent().siblings("span.text").css("visibility","visible");
+        $(this).css("font-size","13px");
+        
+    }, function () {
+        $(this).parent().siblings("span.text").css("visibility","hidden");
+        $(this).css("font-size","11px");
+    }
+);
             
         });
                 
